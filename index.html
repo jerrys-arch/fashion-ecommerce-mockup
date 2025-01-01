@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fashionista offers a wide range of eco-friendly, trendy fashion pieces. Shop now to stay stylish!">
+
+  <title>Fashion Boutique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#"  title="Fashionista Homepage">Fashionista</a>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="search-cart">
+        <input type="text" id="search-input" placeholder="Search for fashion...">
+        <button id="search-button" aria-label="Search for fashion items">🔍</button>
+        
+<div class="cart-icon">
+  <span>🛒</span>
+  <span id="cart-count">0</span>
+  <div id="cart-preview" class="cart-preview">
+    <h3>Cart</h3>
+    <div id="cart-items" class="cart-items">
+      <!-- Cart items will be displayed here dynamically -->
+    </div>
+    <div class="cart-total">
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <button id="clear-cart" aria-label="Clear Cart">Clear Cart</button>
+    <a href="#" id="go-to-cart">Go to Cart</a>
+  </div>
+</div>
+
+
+<div id="toast" class="toast">
+  <span id="toast-message"></span>
+</div>
+
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1>New Season, New Trends</h1>
+      <p>Discover our exclusive collection of the latest fashion trends</p>
+      <a href="#shop" class="cta-btn">Shop Now</a>
+    </div>
+  </section>
+
+ 
+<!-- Main Product Section -->
+<section class="products" id="shop">
+    <div class="container">
+      <h2>Featured Collection</h2>
+      <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product-item" data-name="Stylish Coat">
+          <img src="https://plus.unsplash.com/premium_photo-1691622500876-2d32e983b132?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 1">
+          <div class="product-info">
+            <h3>Stylish Coat</h3>
+            <p class="price">$149.99</p>
+            <button  class="add-to-cart-btn" data-name="Stylish Coat" data-price="149.99">Add to Cart</button>
+            
+            <!-- Rating Section for Product 1 -->
+            <section class="product-rating">
+              <div class="rating-stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+              </div>
+              
+            </section>
+          </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="product-item" data-name="Leather Jacket">
+          <img src="https://images.unsplash.com/flagged/photo-1553077212-5be90b05a4de?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300/400" alt="Product 2">
+          <div class="product-info">
+            <h3>Leather Jacket</h3>
+            <p class="price">$199.99</p>
+            <button  class="add-to-cart-btn" data-name="Leather Jacket" data-price="199.99">Add to Cart</button>
+            
+            <!-- Rating Section for Product 2 -->
+            <section class="product-rating">
+              <div class="rating-stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+              </div>
+             
+            </section>
+          </div>
+        </div>
+  
+        <!-- Product 3 -->
+        <div class="product-item" data-name="Casual Dress">
+          <img src="https://images.unsplash.com/photo-1542295669297-4d352b042bca?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 3">
+          <div class="product-info">
+            <h3>Casual Dress</h3>
+            <p class="price">$89.99</p>
+            <button class="add-to-cart-btn" data-name="Casual Dress" data-price="89.99">Add to Cart</button>
+            
+            <!-- Rating Section for Product 3 -->
+            <section class="product-rating">
+              <div class="rating-stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+              </div>
+             
+            </section>
+          </div>
+        </div>
+  
+        <!-- Product 4 -->
+        <div class="product-item" data-name="Trendy Sneakers">
+          <img src="https://images.unsplash.com/photo-1562424995-2efe650421dd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 4">
+          <div class="product-info">
+            <h3>Trendy Sneakers</h3>
+            <p class="price">$119.99</p>
+            <button class="add-to-cart-btn" data-name="Trendy Sneaker" data-price="119.99">Add to Cart</button>
+            
+            <!-- Rating Section for Product 4 -->
+            <section class="product-rating">
+              <div class="rating-stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+              </div>
+              
+            </section>
+          </div>
+        </div>
+  
+  <!-- Product 5 -->
+  <div class="product-item" data-name="Activewear">
+    <img src="https://plus.unsplash.com/premium_photo-1727896380199-f3ded32253cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 5">
+    <div class="product-info">
+      <h3>Activewear</h3>
+      <p class="price">$213.99</p>
+      <button class="add-to-cart-btn" data-name="Activewear" data-price="213.99">Add to Cart</button>
+      
+      <!-- Rating Section for Product 5-->
+      <section class="product-rating">
+        <div class="rating-stars">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+       
+      </section>
+    </div>
+  </div>
+  <!-- Product 6 -->
+  <div class="product-item" data-name="Bridal Wear">
+    <img src="https://images.unsplash.com/photo-1595868321403-bac51fbdeb97?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 6">
+    <div class="product-info">
+      <h3>Bridal Wear</h3>
+      <p class="price">$512.99</p>
+      <button class="add-to-cart-btn" data-name="Bridal Wear" data-price="512.99">Add to Cart</button>
+      
+      <!-- Rating Section for Product 6 -->
+      <section class="product-rating">
+        <div class="rating-stars">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+       
+      </section>
+    </div>
+  </div>
+  <!-- Product 7-->
+  <div class="product-item" data-name="office wear">
+    <img src="https://plus.unsplash.com/premium_photo-1671305002675-a4b2d151d2db?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 7">
+    <div class="product-info">
+      <h3>office wear</h3>
+      <p class="price">$133.99</p>
+      <button class="add-to-cart-btn" data-name="office wear" data-price="133.99">Add to Cart</button>
+      
+      <!-- Rating Section for Product 7-->
+      <section class="product-rating">
+        <div class="rating-stars">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+       
+      </section>
+    </div>
+  </div>
+  <!-- Product 8-->
+  <div class="product-item" data-name="Sleepwear">
+    <img src="https://plus.unsplash.com/premium_photo-1661763922970-e0f46e28ca9e?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/300x400" alt="Product 3">
+    <div class="product-info">
+      <h3>Sleepwear</h3>
+      <p class="price">$89.99</p>
+      <button class="add-to-cart-btn" data-name="Sleepwear" data-price="89.99">Add to Cart</button>
+      
+      <!-- Rating Section for Product 8-->
+      <section class="product-rating">
+        <div class="rating-stars">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+       
+      </section>
+    </div>
+  </div>
+  
+  </div>
+    
+    </div>
+  </section>
+  <!-- Lookbook Section -->
+  <section class="lookbook" id="lookbook">
+    <div class="container">
+      <h2>Lookbook</h2>
+      <p>Get inspired with our stylish looks.</p>
+      <div class="lookbook-gallery">
+        <img src="https://images.unsplash.com/photo-1557541142-0c25a0ffaf15?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/500x300" alt="Look 1">
+        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/500x300" alt="Look 2">
+        <img src="https://images.unsplash.com/photo-1726491703868-c74b074ffdcd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D/500x300" alt="Look 3">
+      </div>
+    </div>
+  </section>
+
+  
+ <!-- About Us Section -->
+<section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to <strong>Fashionista</strong>, where style meets sustainability. We are more than just a fashion brand; we are a community of trendsetters, dreamers, and doers who believe in looking good while doing good for the planet.</p>
+      
+      <h3>Our Story</h3>
+      <p>Founded in 2018, <strong>Fashionista</strong> started with a simple vision: to create stylish, sustainable, and high-quality fashion for every woman. What began as a small boutique in New York has grown into an international fashion destination, with a commitment to providing unique, eco-friendly pieces that you'll love to wear season after season.</p>
+      
+      <h3>Our Mission</h3>
+      <p>We are passionate about delivering fashionable pieces that not only elevate your wardrobe but also make a positive impact on the world. Our mission is to provide women with clothing that is both chic and eco-conscious. We work with artisans, use organic materials, and focus on reducing waste at every stage of our production process.</p>
+  
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li><strong>Eco-Friendly Fashion</strong>: We use sustainable fabrics and production methods to create pieces that are kind to the planet.</li>
+        <li><strong>Size Inclusivity</strong>: Fashion should be for every body. We offer a wide range of sizes to ensure everyone feels represented.</li>
+        <li><strong>High-Quality Craftsmanship</strong>: Our clothes are made to last, ensuring you can wear them for years to come without compromising on style.</li>
+        <li><strong>Global Shipping</strong>: No matter where you are, we offer free worldwide shipping, bringing our fashion to your doorstep.</li>
+      </ul>
+  
+      <h3>Founder’s Message</h3>
+      <p>"Fashion is an expression of who we are, and at Fashionista, we believe that fashion should empower, inspire, and give back. I started this brand with the belief that looking good and doing good can go hand in hand. Thank you for supporting our journey towards a more stylish and sustainable future."</p>
+      <p><em>- <strong>Jane Doe</strong>, Founder & CEO</em></p>
+  
+      <h3>Join Our Community</h3>
+      <p>We'd love for you to be a part of our fashion revolution. Follow us on Instagram, subscribe to our newsletter, and stay updated with the latest collections, exclusive offers, and sustainability tips!</p>
+    </div>
+  </section>
+  
+
+  
+  <!-- Contact Us Section -->
+<section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Get in touch with us for any inquiries, feedback, or just to say hello!</p>
+      </div>
+  
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <h3>Email Us</h3>
+          <p><a href="mailto:support@fashionista.com">support@fashionista.com</a></p>
+        </div>
+        <div class="contact-info-item">
+          <h3>Call Us</h3>
+          <p>+1 (123) 456-7890</p>
+        </div>
+        <div class="contact-info-item">
+          <h3>Visit Us</h3>
+          <p>123 Fashion Street, New York, NY 10001</p>
+        </div>
+      </div>
+  
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-left">
+        <p>&copy; 2024 Fashionista. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Shipping Info</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
